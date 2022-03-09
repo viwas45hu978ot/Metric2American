@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Metric2American</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Metric2American</h1>
+
+</body>
+<nav>
+    
+<button onclick="location.href='index.html'" type="button">Home</button>
+<button onclick="location.href='distance.html'" type="button">Distance</button>
+</nav>
+<section>
+    <p>
+        <label>Grams</label>
+        <input id="inputG" type="number" placeholder="G"
+        oninput="lengthConverterG(this.value)" onchange="lengthConverterG(this.value)">
+      </p>
+      <p>
+        <label>Kilogram</label>
+        <input id="inputMeter" type="number" placeholder="KG"
+        oninput="lengthConverterKG(this.value)" onchange="lengthConverterKG(this.value)">
+      </p>
+      <p>.50 BMG bullet's: <span id="output50"></span></p>
+      <p>Big Mac's: <span id="outputMac"></span></p>
+</section>
+
+</html>
+<script>
+    function lengthConverterG(valNum) {
+        document.getElementById("output50").innerHTML = valNum / 360;
+        document.getElementById("outputMac").innerHTML = valNum / 240;
+      }
+      function lengthConverterKG(valNum) {
+        document.getElementById("output50").innerHTML = valNum / 0.360;
+        document.getElementById("outputMac").innerHTML = valNum / 0.240;
+      }
+</script>

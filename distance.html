@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Metric2American</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Metric2American</h1>
+
+</body>
+<nav>
+    
+<button onclick="location.href='index.html'" type="button">Home</button>
+<button onclick="location.href='mass.html'" type="button">Mass</button>
+</nav>
+<section>
+    <p>
+        <label>Centimeters</label>
+        <input id="inputCM" type="number" placeholder="CM"
+        oninput="lengthConvertercm(this.value)" onchange="lengthConvertercm(this.value)">
+      </p>
+      <p>
+        <label>Meters</label>
+        <input id="inputMeter" type="number" placeholder="M"
+        oninput="lengthConverterm(this.value)" onchange="lengthConverterm(this.value)">
+      </p>
+      <p>AR-15's: <span id="outputAR"></span></p>
+      <p>Hotdogs's: <span id="outputDog"></span></p>
+</section>
+
+</html>
+<script>
+    function lengthConvertercm(valNum) {
+        document.getElementById("outputAR").innerHTML = valNum / 83.185;
+        document.getElementById("outputDog").innerHTML = valNum / 15.24;
+      }
+      function lengthConverterm(valNum) {
+        document.getElementById("outputAR").innerHTML = valNum / 0.83185;
+        document.getElementById("outputDog").innerHTML = valNum / 0.1524;
+      }
+</script>

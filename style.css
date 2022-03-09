@@ -1,0 +1,27 @@
+h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 100%;
+  }
+  p {
+    color: black;
+    font-family: Verdana;
+    font-size: 100%;
+  }
+
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    width: 100px;
+  }
+  button:hover {
+    background-color: #3e8a41; /* Green */
+    color: white;
+  }
